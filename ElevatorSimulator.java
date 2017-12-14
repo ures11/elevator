@@ -25,7 +25,6 @@ public class ElevatorSimulator {
         controller.go();
     }
 
-    //Проверяем количество параметров
     private static void checkArgs(String[] args) {
         if(args.length<4){
             throw new IllegalArgumentException("Too few parameters. Should be 4.");
@@ -35,7 +34,6 @@ public class ElevatorSimulator {
         }
     }
 
-    //Проверяем количество этажей
     private static void checkFloors(String[] args) {
         try {
             floors = Integer.parseInt(args[0]);
@@ -50,7 +48,6 @@ public class ElevatorSimulator {
         }
 
     }
-    //Проверяем высоту этажа
     private static void checkFloorHeight(String[] args) {
         try {
             height = Float.parseFloat(args[1]);
@@ -65,7 +62,6 @@ public class ElevatorSimulator {
         }
 
     }
-    //Проверяем скорость
     private static void checkVelocity(String[] args) {
         try {
             velocity = Float.parseFloat(args[2]);
@@ -80,7 +76,6 @@ public class ElevatorSimulator {
         }
     }
 
-    //Проверяем скорость дверей
     private static void checkDoors(String[] args) {
         try {
             doors = Float.parseFloat(args[3]);
